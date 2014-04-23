@@ -45,38 +45,40 @@
 	        android:text="@string/button_italic"
 	        android:textSize="@dimen/text_button_size"/>
 	    
-	    <Button
-	        android:id="@+id/button_black"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginTop="10dp"
+	    <RadioGroup 
+	        android:id="@+id/colors"
+	    	android:layout_width="fill_parent"
+       	 	android:layout_height="wrap_content"
+       	 	android:orientation="horizontal"
+       	 	android:layout_marginTop="10dp"
 	        android:layout_below="@id/button_bold"
-	        android:layout_alignLeft="@id/button_bold"
-	        android:layout_alignRight="@id/button_bold"
-	        android:text="@string/button_black"
-	        android:textSize="@dimen/text_button_size"/>
-	    
-	    <Button
-	        android:id="@+id/button_blue"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginTop="10dp"
-	        android:layout_below="@id/button_italic"
-	        android:layout_alignLeft="@id/button_italic"
-	        android:layout_alignRight="@id/button_italic"
-	        android:text="@string/button_blue"
-	        android:textSize="@dimen/text_button_size"/>
-	    
-	    <Button
-	        android:id="@+id/button_red"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginTop="10dp"
-	        android:layout_below="@id/button_underline"
-	        android:layout_alignLeft="@id/button_underline"
-	        android:layout_alignRight="@id/button_underline"
-	        android:text="@string/button_red"
-	        android:textSize="@dimen/text_button_size"/>
+	        >
+	        
+	        <RadioButton 
+	            android:id="@+id/button_black"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="33"
+		       	android:checked="true"
+		        android:text="@string/button_black"
+		        android:textSize="@dimen/text_button_size"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/button_blue"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="33"
+		        android:text="@string/button_blue"
+		        android:textSize="@dimen/text_button_size"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/button_red"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="33"
+		        android:text="@string/button_red"
+		        android:textSize="@dimen/text_button_size"/>
+	    </RadioGroup>
     </com.elthum.notepad.layout.MenuSlider>
     
     <Button

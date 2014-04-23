@@ -10,4 +10,7 @@
     <string name="button_show_menu">Show menu</string>
     <string name="textView_edition">Edition :</string>
     <string name="textView_preview">Preview :</string>
+    <string name="black">#000000</string>
+    <string name="red">#FF0000</string>
+    <string name="blue">#0000FF</string>
 </resources>
