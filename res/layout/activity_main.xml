@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context="com.test.test.MainActivity"
+    tools:ignore="MergeRootFrame">
+    
+    <com.elthum.notepad.layout.MenuSlider
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" 
+        android:background="#DDDDDD">
+
+	    <Button 
+	        android:id="@+id/button_bold"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/blue_button_base"
+	        android:text="@string/button_bold"
+	        android:textSize="14sp"/>
+	    
+	    <Button 
+	        android:id="@+id/button_underline"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/blue_button_base"
+	        android:text="@string/button_underline"
+	        android:textSize="@dimen/text_button_size"/>
+
+	    <Button
+	        android:id="@+id/button_italic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/button_bold"
+	        android:layout_alignBottom="@+id/button_bold"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/blue_button_base"
+	        android:text="@string/button_italic"
+	        android:textSize="@dimen/text_button_size"/>
+	    
+	    <Button
+	        android:id="@+id/button_black"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/button_bold"
+	        android:layout_alignLeft="@id/button_bold"
+	        android:layout_alignRight="@id/button_bold"
+	        android:text="@string/button_black"
+	        android:textSize="@dimen/text_button_size"/>
+	    
+	    <Button
+	        android:id="@+id/button_blue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/button_italic"
+	        android:layout_alignLeft="@id/button_italic"
+	        android:layout_alignRight="@id/button_italic"
+	        android:text="@string/button_blue"
+	        android:textSize="@dimen/text_button_size"/>
+	    
+	    <Button
+	        android:id="@+id/button_red"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/button_underline"
+	        android:layout_alignLeft="@id/button_underline"
+	        android:layout_alignRight="@id/button_underline"
+	        android:text="@string/button_red"
+	        android:textSize="@dimen/text_button_size"/>
+    </com.elthum.notepad.layout.MenuSlider>
+    
+    <Button
+        android:id="@+id/button_hide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"
+        android:layout_marginTop="10dp"
+        android:text="@string/button_hide_menu"
+        android:textSize="@dimen/text_button_size"/>
+    
+    <TextView 
+        android:id="@+id/textView_edition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_hide"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/textView_edition"
+        />
+    
+    <EditText 
+        android:id="@+id/editText_edition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_edition"
+        android:inputType="textMultiLine"
+        android:maxLines="4"/>
+    
+    <TextView 
+        android:id="@+id/textView_preview_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_edition"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/textView_preview"
+        />
+    
+    <TextView 
+        android:id="@+id/textView_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_preview_label"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        />
+    
+ </RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloc-notes</string>
+    <string name="button_bold">Gras</string>
+    <string name="button_italic">Italique</string>
+    <string name="button_underline">Souligné</string>
+    <string name="button_black">Noir</string>
+    <string name="button_blue">Bleu</string>
+    <string name="button_red">Rouge</string>
+    <string name="button_hide_menu">Cacher le menu</string>
+    <string name="button_show_menu">Afficher le menu</string>
+    <string name="textView_edition">Édition :</string>
+    <string name="textView_preview">Prévisualisation :</string>
+</resources>
