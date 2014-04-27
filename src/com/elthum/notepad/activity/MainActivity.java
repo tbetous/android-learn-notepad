@@ -67,6 +67,7 @@ public class MainActivity extends Activity {
 						break;
 					default: color = getResources().getString(R.string.black);
 				}
+				preview.setText(Html.fromHtml("<font color=\"" + color + "\">" + edition.getText().toString() + "</span>"));
 			}
 		});
 		
